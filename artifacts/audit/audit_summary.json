@@ -1,0 +1,234 @@
+{
+  "generated_at": "2026-11-09T13:54:49.498367+00:00",
+  "phase": "first experiment / P1 audit",
+  "sandbox_backend": "rlimit+netpatch",
+  "counts": {
+    "candidates_in_matrix": 966,
+    "excluded_infra": 0,
+    "base_pass": 554,
+    "base_fail": 412,
+    "base_pass_audited": 554,
+    "base_pass_audit_fail": 69,
+    "base_pass_audit_pass": 485,
+    "all_audited": 966,
+    "base_fail_audited": 412,
+    "base_fail_audit_pass": 17,
+    "base_fail_audit_pass_rate": 0.03386454183266932,
+    "base_fail_audit_pass_note": "Audit cases exclude base-overlap inputs; passing the sampled audit does not prove the base test was wrong. Treat this as an upper bound on base-test false rejection."
+  },
+  "rates": {
+    "base_pass_rate": 0.5734989648033126,
+    "base_pass_audit_fail_rate": 0.12454873646209386,
+    "base_fail_audit_pass_rate": 0.03386454183266932
+  },
+  "by_split": {
+    "dev": {
+      "base_pass_audited": 275,
+      "base_pass_audit_fail": 37,
+      "base_pass_audit_pass": 238,
+      "distinct_tasks_with_audit_fail": 27,
+      "distinct_generators_with_audit_fail": 4
+    },
+    "eval": {
+      "base_pass_audited": 279,
+      "base_pass_audit_fail": 32,
+      "base_pass_audit_pass": 247,
+      "distinct_tasks_with_audit_fail": 27,
+      "distinct_generators_with_audit_fail": 4
+    }
+  },
+  "by_benchmark": {
+    "humaneval": {
+      "n": 294,
+      "base_pass_audit_fail": 22,
+      "base_pass_audit_pass": 272,
+      "rate": 0.07482993197278912
+    },
+    "mbpp": {
+      "n": 260,
+      "base_pass_audit_fail": 47,
+      "base_pass_audit_pass": 213,
+      "rate": 0.18076923076923077
+    }
+  },
+  "by_generator": {
+    "chatgpt": {
+      "n": 116,
+      "base_pass_audit_fail": 12,
+      "base_pass_audit_pass": 104,
+      "rate": 0.10344827586206896
+    },
+    "codegen-2b": {
+      "n": 47,
+      "base_pass_audit_fail": 7,
+      "base_pass_audit_pass": 40,
+      "rate": 0.14893617021276595
+    },
+    "deepseek-coder-6.7b-base": {
+      "n": 110,
+      "base_pass_audit_fail": 25,
+      "base_pass_audit_pass": 85,
+      "rate": 0.22727272727272727
+    },
+    "gpt-4-1106-preview": {
+      "n": 281,
+      "base_pass_audit_fail": 25,
+      "base_pass_audit_pass": 256,
+      "rate": 0.08896797153024912
+    }
+  },
+  "by_family": {
+    "ChatGPT": {
+      "n": 116,
+      "base_pass_audit_fail": 12,
+      "base_pass_audit_pass": 104,
+      "rate": 0.10344827586206896
+    },
+    "CodeGen": {
+      "n": 47,
+      "base_pass_audit_fail": 7,
+      "base_pass_audit_pass": 40,
+      "rate": 0.14893617021276595
+    },
+    "DeepSeek-Coder": {
+      "n": 110,
+      "base_pass_audit_fail": 25,
+      "base_pass_audit_pass": 85,
+      "rate": 0.22727272727272727
+    },
+    "GPT-4": {
+      "n": 281,
+      "base_pass_audit_fail": 25,
+      "base_pass_audit_pass": 256,
+      "rate": 0.08896797153024912
+    }
+  },
+  "gate_1_eval": {
+    "base_pass_audited": 279,
+    "base_pass_audit_fail": 32,
+    "base_pass_audit_pass": 247,
+    "distinct_tasks_with_audit_fail": 27,
+    "distinct_generators_with_audit_fail": 4
+  },
+  "eval_audit_fail_tasks": [
+    "HumanEval/118",
+    "HumanEval/124",
+    "HumanEval/129",
+    "HumanEval/139",
+    "HumanEval/140",
+    "HumanEval/44",
+    "HumanEval/48",
+    "HumanEval/63",
+    "HumanEval/83",
+    "HumanEval/86",
+    "Mbpp/113",
+    "Mbpp/118",
+    "Mbpp/129",
+    "Mbpp/162",
+    "Mbpp/278",
+    "Mbpp/435",
+    "Mbpp/440",
+    "Mbpp/465",
+    "Mbpp/564",
+    "Mbpp/577",
+    "Mbpp/593",
+    "Mbpp/598",
+    "Mbpp/620",
+    "Mbpp/736",
+    "Mbpp/780",
+    "Mbpp/786",
+    "Mbpp/84"
+  ],
+  "costs": {
+    "base_wall_s": {
+      "n": 554,
+      "mean": 0.07846271395495216,
+      "p50": 0.07529639550193679,
+      "p95": 0.08233123310310475,
+      "p99": 0.09615219227962372,
+      "sum": 43.4683435310435
+    },
+    "base_cpu_s": {
+      "n": 554,
+      "mean": 0.03511924368231047,
+      "p50": 0.032534,
+      "p95": 0.035901,
+      "p99": 0.04007814000000007,
+      "sum": 19.456061000000002
+    },
+    "bank_total_wall_s": {
+      "n": 554,
+      "mean": 0.09314360738439464,
+      "p50": 0.034416063488606596,
+      "p95": 0.07531075867336776,
+      "p99": 2.033613865467196,
+      "sum": 51.60155849095463
+    },
+    "bank_total_cpu_s": {
+      "n": 554,
+      "mean": 0.02298641155234657,
+      "p50": 0.000745,
+      "p95": 0.021843600000000032,
+      "p99": 0.2868164700000005,
+      "sum": 12.734472
+    },
+    "bank_startup_wall_s": {
+      "n": 554,
+      "mean": 0.0332252505235873,
+      "p50": 0.03254837499844143,
+      "p95": 0.035262339349355895,
+      "p99": 0.049827389007114156,
+      "sum": 18.406788790067367
+    },
+    "bank_test_wall_s": {
+      "n": 35768,
+      "mean": 0.0009280577527646853,
+      "p50": 2.458400558680296e-05,
+      "p95": 7.752729870844638e-05,
+      "p99": 0.001436345497713789,
+      "sum": 33.194769700887264
+    },
+    "audit_total_wall_s": {
+      "n": 554,
+      "mean": 0.09144737750637183,
+      "p50": 0.034269964478880865,
+      "p95": 0.09342039269577075,
+      "p99": 2.0332013743045536,
+      "sum": 50.66184713852999
+    },
+    "audit_total_cpu_s": {
+      "n": 554,
+      "mean": 0.02165527797833935,
+      "p50": 0.000743,
+      "p95": 0.019253400000000004,
+      "p99": 0.20808238000000098,
+      "sum": 11.997024
+    }
+  },
+  "bank_test_executions": 35768,
+  "audit_test_executions": 35662,
+  "gate_1": {
+    "criterion": ">=30 naturally generated base-pass/audit-fail candidates on held-out eval, multiple tasks",
+    "observed": 32,
+    "distinct_tasks": 27,
+    "threshold": 30,
+    "passed": true
+  },
+  "gate_5": {
+    "criterion": "real overhead high enough that exhaustive checking is not trivially cheap",
+    "full_bank_p50_s": 0.034416063488606596,
+    "base_p50_s": 0.07529639550193679,
+    "median_per_test_wall_s": 2.458400558680296e-05,
+    "median_candidate_test_total_s": 0.0018354405219724867,
+    "median_bank_startup_s": 0.03254837499844143,
+    "median_startup_share_of_bank": 0.9457320709911097,
+    "median_test_fraction_of_total": 0.016729554135056727,
+    "startup_share_of_bank_mean": 0.35670993916383237,
+    "note": "Median is the decision-relevant figure; the mean is inflated by slow-tail candidates."
+  },
+  "dataset": {
+    "manifest": "data/manifest.json",
+    "policy_input": "data/processed/tasks_public.jsonl",
+    "private_audit_input": "data/private/audit_cases.jsonl"
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "generated_at": "2026-11-09T13:45:54.704423+00:00",
+  "phase": "P1 audit corpus",
+  "download": {
+    "generated_at": "2026-11-09T13:44:54.719457+00:00",
+    "evalplus_release": "v0.1.0 (HumanEval candidates), v0.2.0 (MBPP candidates)",
+    "datasets": [
+      {
+        "name": "humanevalplus",
+        "url": "https://huggingface.co/datasets/evalplus/humanevalplus/resolve/d32357cf319e50e9c8d8dab5ea876c72b0fd321b/test.jsonl",
+        "revision": "d32357cf319e50e9c8d8dab5ea876c72b0fd321b",
+        "path": "data/raw/humanevalplus.jsonl",
+        "sha256": "908377f1daf28dcb36846db73a5662b2e05a9907407c2696c89ad9d3b0b04492",
+        "size": 11452868
+      },
+      {
+        "name": "mbppplus",
+        "url": "https://huggingface.co/datasets/evalplus/mbppplus/resolve/b2d74c91837c3f2a20c1299ae98133cbe7cfa077/data/test-00000-of-00001-d5781c9c51e02795.parquet",
+        "revision": "b2d74c91837c3f2a20c1299ae98133cbe7cfa077",
+        "path": "data/raw/mbppplus.parquet",
+        "sha256": "dc20030b3788fccf617444edcb34138ef13d7e4fafd17bfcb8c1279dbb12399b",
+        "size": 1129135
+      },
+      {
+        "name": "humaneval",
+        "url": "https://raw.githubusercontent.com/openai/human-eval/b9453e8f1865df0a0057a1383767caa400acfbcf/data/HumanEval.jsonl.gz",
+        "revision": "b9453e8f1865df0a0057a1383767caa400acfbcf",
+        "path": "data/raw/humaneval.jsonl.gz",
+        "sha256": "b796127e635a67f93fb35c04f4cb03cf06f38c8072ee7cee8833d7bee06979ef",
+        "size": 44877
+      }
+    ],
+    "candidate_assets": [
+      {
+        "benchmark": "humaneval",
+        "generator": "gpt-4-1106-preview",
+        "family": "GPT-4",
+        "release": "v0.1.0",
+        "asset": "gpt-4-1106-preview_temp_0.0.zip",
+        "url": "https://github.com/evalplus/evalplus/releases/download/v0.1.0/gpt-4-1106-preview_temp_0.0.zip",
+        "sha256": "cad51c9c1d1f0491adc79cbb5739e10891472497e391d510cbd27ed9707b6015",
+        "size": 99057,
+        "extracted_dir": "data/raw/candidates/humaneval/gpt-4-1106-preview_temp_0.0"
+      },
+      {
+        "benchmark": "humaneval",
+        "generator": "chatgpt",
+        "family": "ChatGPT",
+        "release": "v0.1.0",
+        "asset": "chatgpt_temp_0.0.zip",
+        "url": "https://github.com/evalplus/evalplus/releases/download/v0.1.0/chatgpt_temp_0.0.zip",
+        "sha256": "456a49813ad3afac920b92e53d921cf0a2693f06cb980a85a2ef2e55a717dd47",
+        "size": 117185,
+        "extracted_dir": "data/raw/candidates/humaneval/chatgpt_temp_0.0"
+      },
+      {
+        "benchmark": "humaneval",
+        "generator": "codegen-2b",
+        "family": "CodeGen",
+        "release": "v0.1.0",
+        "asset": "codegen-2b_temp_0.0.zip",
+        "url": "https://github.com/evalplus/evalplus/releases/download/v0.1.0/codegen-2b_temp_0.0.zip",
+        "sha256": "9e5a3c8327401098e8d85d1a079bc1d9aed76bef8edefdd704ee14782109bf4f",
+        "size": 120671,
+        "extracted_dir": "data/raw/candidates/humaneval/codegen-2b_temp_0.0"
+      },
+      {
+        "benchmark": "mbpp",
+        "generator": "gpt-4-1106-preview",
+        "family": "GPT-4",
+        "release": "v0.2.0",
+        "asset": "gpt-4-1106-preview_temp_0.0.zip",
+        "url": "https://github.com/evalplus/evalplus/releases/download/v0.2.0/gpt-4-1106-preview_temp_0.0.zip",
+        "sha256": "4e060bf3473b09b763567e042c693fd99d4922d9602124dcb70ab184bcbb252d",
+        "size": 232958,
+        "extracted_dir": "data/raw/candidates/mbpp/gpt-4-1106-preview_temp_0.0"
+      },
+      {
+        "benchmark": "mbpp",
+        "generator": "deepseek-coder-6.7b-base",
+        "family": "DeepSeek-Coder",
+        "release": "v0.2.0",
+        "asset": "deepseek-coder-6.7b-base_temp_0.zip",
+        "url": "https://github.com/evalplus/evalplus/releases/download/v0.2.0/deepseek-coder-6.7b-base_temp_0.zip",
+        "sha256": "ec8036508d353c23884d290d58b38672964af8584dd82a4fffa9f78cce4101fb",
+        "size": 242842,
+        "extracted_dir": "data/raw/candidates/mbpp/deepseek-coder-6.7b-base_temp_0"
+      },
+      {
+        "benchmark": "mbpp",
+        "generator": "codegen-2b",
+        "family": "CodeGen",
+        "release": "v0.2.0",
+        "asset": "codegen-2b_temp_0.zip",
+        "url": "https://github.com/evalplus/evalplus/releases/download/v0.2.0/codegen-2b_temp_0.zip",
+        "sha256": "6b1826536782f102f671bf5cc270e51fd61c10c66fb7708b1085e1d69300208a",
+        "size": 681866,
+        "extracted_dir": "data/raw/candidates/mbpp/codegen-2b_temp_0"
+      }
+    ],
+    "notes": [
+      "HumanEval+ and MBPP+ are used as the audited benchmark, not as a claim of new test quality.",
+      "Base tests are the task's weak-reward tests: original HumanEval check() for HumanEval, and the EvalPlus base test_list for MBPP+.",
+      "Candidate programs are public, previously generated model outputs from the pinned EvalPlus releases."
+    ]
+  },
+  "corpus": {
+    "selected_tasks": 322,
+    "dev_tasks": 160,
+    "eval_tasks": 162,
+    "candidates": 966,
+    "bank_cases": 20748,
+    "audit_cases": 20685,
+    "rejected_tasks": [
+      {
+        "task_id": "HumanEval/32",
+        "reason": "insufficient_valid_cases:{'pool_after_dedup': 886, 'base_overlap': 0, 'invalid_quarantined': 886, 'bank_cases': 0, 'audit_cases': 0, 'source_cases': 886, 'checker_kind': 'custom', 'oversized_quarantined': 0}"
+      },
+      {
+        "task_id": "HumanEval/39",
+        "reason": "insufficient_valid_cases:{'pool_after_dedup': 2, 'base_overlap': 10, 'invalid_quarantined': 0, 'bank_cases': 1, 'audit_cases': 1, 'source_cases': 12, 'checker_kind': 'assertion', 'oversized_quarantined': 0}"
+      },
+      {
+        "task_id": "Mbpp/455",
+        "reason": "insufficient_valid_cases:{'pool_after_dedup': 10, 'base_overlap': 3, 'invalid_quarantined': 0, 'bank_cases': 5, 'audit_cases': 5, 'source_cases': 13, 'checker_kind': 'assertion', 'oversized_quarantined': 0}"
+      },
+      {
+        "task_id": "Mbpp/583",
+        "reason": "insufficient_valid_cases:{'pool_after_dedup': 15, 'base_overlap': 3, 'invalid_quarantined': 0, 'bank_cases': 8, 'audit_cases': 7, 'source_cases': 18, 'checker_kind': 'assertion', 'oversized_quarantined': 0}"
+      },
+      {
+        "task_id": "Mbpp/596",
+        "reason": "insufficient_valid_cases:{'pool_after_dedup': 122, 'base_overlap': 2, 'invalid_quarantined': 122, 'bank_cases': 0, 'audit_cases': 0, 'source_cases': 124, 'checker_kind': 'assertion', 'oversized_quarantined': 0}"
+      },
+      {
+        "task_id": "Mbpp/635",
+        "reason": "insufficient_valid_cases:{'pool_after_dedup': 1, 'base_overlap': 3, 'invalid_quarantined': 0, 'bank_cases': 1, 'audit_cases': 0, 'source_cases': 4, 'checker_kind': 'assertion', 'oversized_quarantined': 0}"
+      },
+      {
+        "task_id": "Mbpp/734",
+        "reason": "insufficient_valid_cases:{'pool_after_dedup': 1, 'base_overlap': 3, 'invalid_quarantined': 0, 'bank_cases': 1, 'audit_cases': 0, 'source_cases': 4, 'checker_kind': 'assertion', 'oversized_quarantined': 0}"
+      },
+      {
+        "task_id": "Mbpp/762",
+        "reason": "insufficient_valid_cases:{'pool_after_dedup': 10, 'base_overlap': 3, 'invalid_quarantined': 0, 'bank_cases': 5, 'audit_cases': 5, 'source_cases': 13, 'checker_kind': 'assertion', 'oversized_quarantined': 0}"
+      },
+      {
+        "task_id": "Mbpp/793",
+        "reason": "insufficient_valid_cases:{'pool_after_dedup': 1, 'base_overlap': 2, 'invalid_quarantined': 0, 'bank_cases': 1, 'audit_cases': 0, 'source_cases': 3, 'checker_kind': 'assertion', 'oversized_quarantined': 0}"
+      }
+    ]
+  },
+  "files": {
+    "tasks_public": "data/processed/tasks_public.jsonl",
+    "candidates": "data/processed/candidates.jsonl",
+    "audit_cases": "data/private/audit_cases.jsonl",
+    "splits": "data/processed/splits.json"
+  },
+  "notes": [
+    "Bank and audit cases are disjoint by construction.",
+    "Every bank/audit case passed the canonical solution twice during preparation.",
+    "Base tests were checked against the canonical solution before a task entered the corpus.",
+    "The policy loader never reads data/private/."
+  ]
+}

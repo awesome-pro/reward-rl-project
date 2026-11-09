@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+data/raw/
+data/processed/*.jsonl
+data/private/
+*.egg-info/
+build/
+dist/
+artifacts/**/.mplconfig/

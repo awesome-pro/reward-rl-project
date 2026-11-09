@@ -1,0 +1,93 @@
+{
+  "seed": 20261109,
+  "benchmarks": {
+    "humaneval": {
+      "dev_tasks": 80,
+      "eval_tasks": 84,
+      "bank_cases": 80,
+      "audit_cases": 80
+    },
+    "mbpp": {
+      "dev_tasks": 80,
+      "eval_tasks": 80,
+      "bank_cases": 53,
+      "audit_cases": 53
+    }
+  },
+  "generators": {
+    "humaneval": [
+      {
+        "name": "gpt-4-1106-preview",
+        "family": "GPT-4",
+        "release": "v0.1.0",
+        "asset": "gpt-4-1106-preview_temp_0.0.zip"
+      },
+      {
+        "name": "chatgpt",
+        "family": "ChatGPT",
+        "release": "v0.1.0",
+        "asset": "chatgpt_temp_0.0.zip"
+      },
+      {
+        "name": "codegen-2b",
+        "family": "CodeGen",
+        "release": "v0.1.0",
+        "asset": "codegen-2b_temp_0.0.zip"
+      }
+    ],
+    "mbpp": [
+      {
+        "name": "gpt-4-1106-preview",
+        "family": "GPT-4",
+        "release": "v0.2.0",
+        "asset": "gpt-4-1106-preview_temp_0.0.zip"
+      },
+      {
+        "name": "deepseek-coder-6.7b-base",
+        "family": "DeepSeek-Coder",
+        "release": "v0.2.0",
+        "asset": "deepseek-coder-6.7b-base_temp_0.zip"
+      },
+      {
+        "name": "codegen-2b",
+        "family": "CodeGen",
+        "release": "v0.2.0",
+        "asset": "codegen-2b_temp_0.zip"
+      }
+    ]
+  },
+  "sandbox": {
+    "test_timeout_s": 2.0,
+    "base_timeout_s": 6.0,
+    "load_timeout_s": 8.0,
+    "cpu_limit_s": 12,
+    "memory_limit_mb": 1024,
+    "file_size_limit_mb": 2,
+    "network": "patch",
+    "sandbox_exec": "auto"
+  },
+  "budgets_s": [
+    0.032,
+    0.0325,
+    0.033,
+    0.0335,
+    0.034,
+    0.035,
+    0.0375,
+    0.04,
+    0.05,
+    0.06,
+    0.08,
+    0.12,
+    0.16,
+    0.25
+  ],
+  "bootstrap": {
+    "iterations": 2000,
+    "confidence": 0.95
+  },
+  "profiles": {
+    "k": 8,
+    "p_buggy_prior": 0.25
+  }
+}
